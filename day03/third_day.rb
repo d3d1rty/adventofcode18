@@ -1,4 +1,7 @@
-# Initialize 2d array for space of cloth
+# Part One
+
+##
+# Initialize 2d array to represent fabric.
 def draw_board(x, y)
   x_arr = []
   x.times do
@@ -11,6 +14,8 @@ def draw_board(x, y)
   x_arr
 end
 
+##
+# Draws a pattern on the fabric.
 def draw_pattern(board, id, start_x, x_mod, start_y, y_mod)
   y_mod.times do |i|
     x_mod.times do |index|
@@ -41,6 +46,10 @@ end
 
 puts overlapped_inches
 
+# Part Two
+
+##
+# Checks if a pattern is overlapped with another.
 def is_overlapped?(board, id, start_x, x_mod, start_y, y_mod)
   found_overlap = false
   y_mod.times do |i|
